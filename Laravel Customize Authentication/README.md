@@ -1,66 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Customized Authentication System using Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+__𝙊𝙫𝙚𝙧𝙫𝙞𝙚𝙬:__ The purpose of this project is to develop a customized authentication system that provides a secure and user-friendly way for users to log in and register for a web application. The system will include features such as email verification, password reset, remember me, login with Google, and more.
+- - - - -
+## Features
 
-## About Laravel
+- `Login page` The login page will include a form that allows the user to enter their email and password. The system will also include a "remember me" feature that allows the user to stay logged in for a specified period of time.
+- `Registration page` The registration page will include a form that allows the user to enter their name, email, password, and other relevant details. The system will include validation for the registration form fields and will only allow registration with a verified email address.
+- `Email verification` The system will integrate with an SMTP service to send an OTP using email after registration to verify the user's email address. The OTP submission page will allow the user to resend the OTP after 60 seconds. After successful OTP submission, the user will be redirected to the welcome page/home page.
+- `Login with Google` The system will provide the option for the user to log in using their Google account.
+- `Password reset` The system will include a "forgot password" feature that redirects the user to a new tab to verify their email address. If the email address is valid, the system will send a mail with a reset password link where the user can change their password.
+- `Validation` The system will include validation for the registration form fields and reset password form fields to ensure the data entered by the user is valid and secure.
+- `Logout` The home page/welcome page will include a logout button that allows the user to log out of the system.
+- `Middleware` Middleware services will be used to verify that the user of the application is authenticated and to restrict access to certain pages.
+- - - - -
+## Demo
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- - - - -
+## Technology
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- `Backend` Laravel PHP framework
+- `Frontend` Livewire for real-time frontend development, HTML, CSS, Bootstrap, and JavaScript for the user interface
+- `Database` MySQL for data storage
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- - - - -
+## Conclusion
 
-## Laravel Sponsors
+This customized authentication system will provide a secure and user-friendly way for users to log in and register for a web application. The integration of email verification, password reset, and other features will enhance the security and usability of the system. The use of Laravel, HTML, CSS, Bootstrap, and JavaScript will ensure a high-performance system that is easily scalable and maintainable.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
+## Usage
 
-### Premium Partners
+This is not a package - it's a full Laravel project that you should use as a starter boilerplate, and then add your own custom functionality.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Clone the repository with `git clone`
+- Copy `.env.example` file to `.env` and edit database credentials there
+- Run `composer install`
+- Run `php artisan keygenerate`
+- Run `php artisan migrate`
+- Run `php artisan serve`
