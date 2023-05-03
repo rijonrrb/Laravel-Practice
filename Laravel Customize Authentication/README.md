@@ -18,6 +18,10 @@ __𝙊𝙫𝙚𝙧𝙫𝙞𝙚𝙬:__ The purpose of this project is to develop 
 
 
 
+https://user-images.githubusercontent.com/109922200/235931063-5ba5a93f-2a13-45d3-8bf4-abb56ec03aa3.mp4
+
+
+
 
 - - - - -
 ## Technology
